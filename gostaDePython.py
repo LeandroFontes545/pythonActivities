@@ -1,8 +1,6 @@
-resposta = ""
-while True:
-  resposta = str(input("voce gosta de python ").upper())
-  if resposta != "SIM":
+resposta = str(input("voce gosta de python ").upper())
+while resposta != "SIM" and resposta != "S":
     print(f"resposta errada")
-  else:
-    print(f"resposta certa")
-    break
+    resposta = str(input("voce gosta de python ").upper())
+else:
+  print(f"resposta certa")
